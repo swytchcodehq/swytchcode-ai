@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swytchcode</title>
-<meta name="description" content="Swytchcode sits between your AI agent and production, handling auth, retries, idempotency, and policy control for the APIs you need.">
-
+<title>Swytchcode | Production Platform for AI Agents</title>
+<meta
+  name="description"
+  content="Swytchcode is a production platform for AI agents that securely connects applications to third-party APIs using OAuth authentication, policy enforcement, reliable execution, and audit logging.">
 <link rel="icon" href="favicon/favicon.ico">
 
 <style>
@@ -66,27 +67,89 @@
 </header>
 
 <main>
-  <h1>Swytchcode: Build agents that don't break in prod.</h1>
+  <h1>Swytchcode</h1>
 
-  <p>Production-ready API execution for AI agents, with auth, retries, and schema validation built in.</p>
+  <p>
+    <strong>Production platform for AI agents.</strong>
+    Securely connect AI agents and applications to external APIs with built-in
+    authentication, policy enforcement, retries, schema validation, and audit
+    logging.
+  </p>
 
   <p><code>npx swytchcode</code></p>
 
-  <p>Free to start. Works with Cursor, Claude, and Copilot. No SDK setup.</p>
+  <p>
+    Free to start. Works with Cursor, Claude, GitHub Copilot, and other AI
+    development tools.
+  </p>
 </main>
 
 <section>
-  <h2>What is Swytchcode</h2>
 
-  <p>This page is the default homepage used for OAuth verification and validation for applications built with Swytchcode.</p>
+<h2>What is Swytchcode?</h2>
 
-  <p>Swytchcode is an AI-powered platform that helps developers discover, understand, test, and integrate APIs. It transforms API specifications, SDKs, and documentation into an interactive AI interface, making it easier to work with APIs and build applications.</p>
+<p>
+Swytchcode is a production platform that helps developers build reliable AI
+applications by securely connecting AI agents to third-party services and APIs.
+Instead of implementing authentication, request validation, retries, execution
+policies, and logging for every integration, developers use Swytchcode to
+manage these capabilities through a single platform.
+</p>
 
-  <p>Instead of digging through scattered docs, Swytchcode reads a provider's API spec, SDK, and documentation, then gives developers and their AI agents a single interface to ask questions, generate working requests, and call the API directly. It handles the repetitive parts of API integration, like authentication, retries, and request formatting, so developers can focus on what they're building instead of how to wire it up.</p>
+<p>
+Developers use Swytchcode to build AI agents, internal tools, automations, and
+applications that interact with external business software and cloud services.
+Swytchcode supports integrations with thousands of APIs across productivity,
+communication, developer tools, CRM, finance, storage, and collaboration
+platforms.
+</p>
 
-  <p>Swytchcode supports a growing set of API providers, including GitHub, Stripe, Slack, Notion, Gmail, and HubSpot, and is designed to work alongside AI coding tools such as Cursor, Claude, and GitHub Copilot.</p>
+<h2>Why does Swytchcode request account access?</h2>
 
-  <p>This page exists solely to satisfy OAuth application verification requirements and does not provide any user-facing functionality.</p>
+<p>
+Many integrations require users to connect their own accounts using OAuth.
+When a user chooses to connect a service, Swytchcode requests permission only
+for the specific application and functionality that the user enables.
+</p>
+
+<p>
+Depending on the connected service, Swytchcode may request permission to:
+</p>
+
+<ul>
+    <li>Read or send emails</li>
+    <li>Access cloud storage files</li>
+    <li>Read or update calendar events</li>
+    <li>Create or update CRM records</li>
+    <li>Manage support tickets</li>
+    <li>Execute developer workflows</li>
+    <li>Access documents and business data</li>
+</ul>
+
+<p>
+Only the permissions required for the selected integration are requested.
+Swytchcode never asks for access to services that the user has not explicitly
+chosen to connect.
+</p>
+
+<h2>Privacy & Security</h2>
+
+<p>
+Users authenticate directly with the service provider through OAuth.
+Swytchcode does not collect account passwords or expose credentials to AI
+agents. Access tokens are securely managed, API executions are logged for
+auditing, and users can revoke access to connected accounts at any time through
+their provider or within Swytchcode.
+</p>
+
+<h2>Supported Integrations</h2>
+
+<p>
+Swytchcode supports integrations with more than 2,000 APIs, including Google
+Workspace, Microsoft 365, GitHub, Slack, Stripe, Salesforce, HubSpot,
+Dropbox, Zoom, QuickBooks, Notion, PayPal, and many other cloud services.
+</p>
+
 </section>
 
 <footer>
