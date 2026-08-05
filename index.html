@@ -72,7 +72,8 @@
 <h2>Production Platform for AI Agents</h2>
 
 <p>
-Build AI agents that securely connect to external applications using OAuth,
+Build AI agents that securely connect to external applications, including
+Google Workspace (Gmail, Google Calendar, Google Drive), using OAuth,
 reliable API execution, and policy enforcement.
 </p>
 
@@ -107,19 +108,36 @@ platforms.
 <h2>Why does Swytchcode request account access?</h2>
 
 <p>
-Many integrations require users to connect their own accounts using OAuth.
-When a user chooses to connect a service, Swytchcode requests permission only
-for the specific application and functionality that the user enables.
+Many integrations, including Google Workspace, require users to connect their
+own accounts using OAuth. When a user chooses to connect a service,
+Swytchcode requests permission only for the specific application and
+functionality that the user enables.
 </p>
 
 <p>
-Depending on the connected service, Swytchcode may request permission to:
+For example, when a user connects their <strong>Google Account</strong>,
+Swytchcode may request permission to:
 </p>
 
 <ul>
-    <li>Read or send emails</li>
+    <li>Read or send email via <strong>Gmail</strong></li>
+    <li>Read or update events via <strong>Google Calendar</strong></li>
+    <li>Access files via <strong>Google Drive</strong></li>
+</ul>
+
+<p>
+These permissions let a user's AI agent perform tasks such as drafting and
+sending replies, scheduling meetings, or retrieving a document, on the
+user's behalf and only after the user explicitly authorizes that access.
+</p>
+
+<p>
+Depending on the connected service, Swytchcode may also request permission
+to:
+</p>
+
+<ul>
     <li>Access cloud storage files</li>
-    <li>Read or update calendar events</li>
     <li>Create or update CRM records</li>
     <li>Manage support tickets</li>
     <li>Execute developer workflows</li>
